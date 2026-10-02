@@ -1,0 +1,3 @@
+"""
+Pocket smartAI application package.
+"""

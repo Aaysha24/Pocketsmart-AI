@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Pocket smartAI</title>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Pocket <span>smartAI</span>
+        </div>
+
+        <a
+            href="/"
+            class="nav-link"
+        >
+            Home
+        </a>
+
+    </nav>
+
+
+    <!-- =====================================================
+         HERO SECTION
+         ===================================================== -->
+
+    <section class="hero">
+
+        <h1>
+            Welcome to
+            <span>Pocket smartAI</span>
+        </h1>
+
+        <p>
+            Your simple AI-powered assistant
+            for smart and helpful tasks.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main class="container">
+
+        <div class="ai-card">
+
+            <h2>
+                Ask Pocket smartAI
+            </h2>
+
+            <p class="description">
+                Enter your question or request below.
+            </p>
+
+
+            <!-- =================================================
+                 AI FORM
+                 ================================================= -->
+
+            <form id="aiForm">
+
+                <div class="form-group">
+
+                    <label for="prompt">
+                        Your Request
+                    </label>
+
+
+                    <textarea
+                        id="prompt"
+                        name="prompt"
+                        maxlength="5000"
+                        placeholder="Type your question here..."
+                        required
+                    ></textarea>
+
+
+                    <div
+                        id="characterCount"
+                        class="character-count"
+                    >
+                        0/5000
+                    </div>
+
+                </div>
+
+
+                <!-- Submit Button -->
+
+                <button
+                    type="submit"
+                    id="submitBtn"
+                    class="submit-btn"
+                >
+                    ✨ Ask smartAI
+                </button>
+
+            </form>
+
+
+            <!-- =================================================
+                 LOADING
+                 ================================================= -->
+
+            <div
+                id="loading"
+                class="loading"
+            >
+
+                <div class="spinner"></div>
+
+                <p>
+                    Pocket smartAI is thinking...
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 ERROR
+                 ================================================= -->
+
+            <div
+                id="errorMessage"
+                class="error-message"
+            >
+
+                <strong>
+                    Error
+                </strong>
+
+                <p id="errorText">
+                    Something went wrong.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 AI RESULT
+                 ================================================= -->
+
+            <div
+                id="resultBox"
+                class="result-box"
+            >
+
+                <div class="result-header">
+
+                    <h3>
+                        AI Response
+                    </h3>
+
+                    <button
+                        type="button"
+                        id="copyBtn"
+                        class="copy-btn"
+                    >
+                        Copy
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="resultText"
+                    class="result-text"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             FEATURES
+             ===================================================== -->
+
+        <div class="features">
+
+            <div class="feature-card">
+
+                <h3>
+                    🤖 AI Powered
+                </h3>
+
+                <p>
+                    Get intelligent answers
+                    using Google Gemini.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    ⚡ Fast
+                </h3>
+
+                <p>
+                    Ask your questions and
+                    receive AI responses quickly.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    💡 Simple
+                </h3>
+
+                <p>
+                    A clean and easy-to-use
+                    AI assistant interface.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+        <p>
+            Pocket smartAI • AI-powered assistant
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script
+        src="/static/js/app.js"
+    ></script>
+
+</body>
+
+</html>
